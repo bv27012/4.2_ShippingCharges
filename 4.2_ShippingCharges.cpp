@@ -50,6 +50,8 @@ int main()
 		cout << "Invalid distance. Please select a distance between 10 and 3000 miles (inclusive)." << endl;
 	}
 
+	totalCost = weightRate * distFactor;
+	cout << "Total: " << totalCost << endl;
 
 	return 0;
 }
