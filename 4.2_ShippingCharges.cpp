@@ -13,25 +13,25 @@ int main()
 	double weightRate;
 	double totalCost;
 
-	cout << "How much does your package weigh?" << endl << endl;
+	cout << "How much does your package weigh?" << endl;
 	cin >> wInput;
-	cout << wInput << endl;
+	cout << endl;
 
 	if (wInput >= 0 && wInput <= 2) {
-		weightRate = 1.1;
-		cout << "Cost Based On Weight: " << weightRate << endl;
+		weightRate = 1.10;
+		cout << "Cost Based On Weight: " << fixed << setprecision(2) << weightRate << endl;	
 	}
 	else if (wInput >= 3 && wInput <= 6) {
-		weightRate = 2.2;
-		cout << "Cost Based On Weight: " << weightRate << endl;
+		weightRate = 2.20;
+		cout << "Cost Based On Weight: " << fixed << setprecision(2) <<weightRate << endl;
 	}
 	else if (wInput >= 7 && wInput <= 10) {
-		weightRate = 3.7;
-		cout << "Cost Based On Weight: " << weightRate << endl;
+		weightRate = 3.70;
+		cout << "Cost Based On Weight: " << fixed << setprecision(2) << weightRate << endl;
 	}
 	else if (wInput >= 11 && wInput <= 20) {
-		weightRate = 4.8;
-		cout << "Cost Based On Weight: " << weightRate << endl;
+		weightRate = 4.80;
+		cout << "Cost Based On Weight: " << fixed << setprecision(2) << weightRate << endl;
 	}
 	else {
 		cout << "Invalid weight." << endl;
