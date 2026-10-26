@@ -13,6 +13,10 @@ int main()
 	double weightRate;
 	double totalCost;
 
+	cout << "How much does your package weigh?" << endl;
+	cin >> wInput;
+
+
 
 	return 0;
 }
