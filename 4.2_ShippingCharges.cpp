@@ -19,19 +19,19 @@ int main()
 
 	if (wInput >= 0 && wInput <= 2) {
 		weightRate = 1.10;
-		cout << "Cost Based On Weight: " << fixed << setprecision(2) << weightRate << endl;	
+		cout << "Cost Based On Weight: $" << fixed << setprecision(2) << weightRate << endl;	
 	}
 	else if (wInput >= 3 && wInput <= 6) {
 		weightRate = 2.20;
-		cout << "Cost Based On Weight: " << fixed << setprecision(2) <<weightRate << endl;
+		cout << "Cost Based On Weight: $" << fixed << setprecision(2) <<weightRate << endl;
 	}
 	else if (wInput >= 7 && wInput <= 10) {
 		weightRate = 3.70;
-		cout << "Cost Based On Weight: " << fixed << setprecision(2) << weightRate << endl;
+		cout << "Cost Based On Weight: $" << fixed << setprecision(2) << weightRate << endl;
 	}
 	else if (wInput >= 11 && wInput <= 20) {
 		weightRate = 4.80;
-		cout << "Cost Based On Weight: " << fixed << setprecision(2) << weightRate << endl;
+		cout << "Cost Based On Weight: $" << fixed << setprecision(2) << weightRate << endl;
 	}
 	else {
 		cout << "Invalid weight." << endl;
@@ -50,8 +50,10 @@ int main()
 		cout << "Invalid distance. Please select a distance between 10 and 3000 miles (inclusive)." << endl;
 	}
 
+	cout << endl;
+
 	totalCost = weightRate * distFactor;
-	cout << "Total: " << totalCost << endl;
+	cout << "Total: $" << fixed << setprecision(2) <<totalCost << endl;
 
 	return 0;
 }
