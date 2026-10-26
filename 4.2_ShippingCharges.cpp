@@ -7,6 +7,11 @@ using namespace std;
 
 int main()
 {
+	int wInput;
+	int dInput;
+	int distFactor;
+	double weightRate;
+	double totalCost;
 
 
 	return 0;
