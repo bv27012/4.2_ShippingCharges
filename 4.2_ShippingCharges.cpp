@@ -36,10 +36,15 @@ int main()
 	else {
 		cout << "Invalid weight." << endl;
 	}
+	
+	cout << endl;
 
 	cout << "How far is your package going?" << endl;
+	cin >> dInput;
+	cout << endl;
+
 	if(dInput >= 10 && dInput <= 3000){
-		distFactor = ceil(dInput / 500);
+		distFactor = ceil(dInput / 500.0);
 		cout << "Distance Factor (Will be multiplied with weight rate shown above): " << distFactor << endl;
 	} else {
 		cout << "Invalid distance. Please select a distance between 10 and 3000 miles (inclusive)." << endl;
